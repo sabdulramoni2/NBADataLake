@@ -2,7 +2,7 @@ import boto3
 from botocore.exceptions import ClientError
 
 # Define the names of resources to delete
-BUCKET_NAME = "sports-analytics-data-lake222"
+BUCKET_NAME = "sports-analytics-data-lake2025"
 GLUE_DATABASE_NAME = "glue_nba_data_lake"
 
 def delete_s3_bucket(bucket_name):
