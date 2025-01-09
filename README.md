@@ -79,7 +79,11 @@ NBA_ENDPOINT=https://api.sportsdata.io/v3/nba/scores/json/Players
 ```bash
 python3 setup_nba_data_lake.py
 ```
+![alt text](PICS/image1.png)
+
 -You should see the resources were successfully created, the sample data was uploaded successfully and the Data Lake Setup Completed
+
+![alt text](PICS/image2.png)
 
 # Step 5: Manually Check For The Resources
 1. In the Search Bar, type S3 and click blue hyper link name
@@ -87,6 +91,8 @@ python3 setup_nba_data_lake.py
 -You should see 2 General purpose bucket named "Sports-analytics-data-lake"
 
 -When you click the bucket name you will see 3 objects are in the bucket
+
+![alt text](PICS/image3.png)
 
 2. Click on raw-data and you will see it contains "nba_player_data.json"
 
@@ -98,7 +104,7 @@ python3 setup_nba_data_lake.py
 ```bash
 SELECT FirstName, LastName, Position, Team
 FROM nba_players
-WHERE Position = 'PG';
+WHERE Position = 'PG'; 
 ```
 
 -Click Run
